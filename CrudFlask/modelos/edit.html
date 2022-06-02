@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Celular</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1 style="text-align:center;">Editar {{celular.marca}}</h1>
+    <form action="/edit/{{celular.id}}" class="container" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                 <input type="text" name="marca" id="marca" placeholder="marca" value="{{celular.marca}}">
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="modelo" id="modelo" placeholder="modelo" value="{{celular.modelo}}">
+            </div>
+             <div class="col-md-6">
+                <input type="text" name="sistemaOperacional" id="sistemaOperacional" placeholder="sistema operacional" value="{{celular.sistemaOperacional}}">
+            </div>
+             <div class="col-md-6">
+                <input type="text" name="memoriaRam" id="memoriaRam" placeholder="memória RAM" value="{{celular.memoriaRam}}">
+            </div>
+             <div class="col-md-6">
+                <input type="text" name="pesoGrama" id="pesoGrama" placeholder="peso grama" value="{{celular.pesoGrama}}">
+            </div>
+        </div>
+        <br>
+        <div class="row col-xs-12">
+            <button type="submit" class="btn btn-block btn-success">Enviar</button>
+        </div>
+    </form>
+
+</body>
+</html>
